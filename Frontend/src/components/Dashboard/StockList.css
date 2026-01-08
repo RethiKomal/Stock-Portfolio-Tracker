@@ -1,0 +1,140 @@
+.stock-list {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.stock-list h2 {
+  font-size: 24px;
+  color: #2d3748;
+  margin-bottom: 24px;
+}
+
+.stock-list-empty {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 16px;
+  text-align: center;
+  color: #718096;
+  font-size: 16px;
+}
+
+.stock-table-container {
+  overflow-x: auto;
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stock-table thead {
+  background: #f7fafc;
+}
+
+.stock-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 700;
+  color: #4a5568;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.stock-table td {
+  padding: 20px 16px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #2d3748;
+  white-space: nowrap;
+}
+
+.stock-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.stock-table tbody tr:hover {
+  background: #f7fafc;
+}
+
+.symbol-cell strong {
+  color: #667eea;
+  font-size: 16px;
+}
+
+.gain {
+  color: #48bb78;
+  font-weight: 600;
+}
+
+.loss {
+  color: #e53e3e;
+  font-weight: 600;
+}
+
+.gain-loss-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gain-loss-cell small {
+  display: block;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-icon {
+  padding: 8px;
+  border-radius: 8px;
+  background: transparent;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-icon.edit {
+  color: #667eea;
+}
+
+.btn-icon.edit:hover {
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.btn-icon.delete {
+  color: #e53e3e;
+}
+
+.btn-icon.delete:hover {
+  background: rgba(229, 62, 62, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .stock-table {
+    font-size: 14px;
+  }
+
+  .stock-table th,
+  .stock-table td {
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stock-list {
+    padding: 20px;
+  }
+
+  .stock-table-container {
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+}
